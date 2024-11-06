@@ -27,7 +27,7 @@
                 Success = false,
                 Message = message,
                 Data = default(T), // Data yok
-                Timestamp = DateTime.UtcNow
+                Timestamp = DateTime.UtcNow //
             };
         }
     }
