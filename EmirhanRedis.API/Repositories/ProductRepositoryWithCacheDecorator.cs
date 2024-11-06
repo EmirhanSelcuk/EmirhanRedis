@@ -35,7 +35,7 @@ namespace EmirhanRedis.API.Repositories
 
         public async Task<List<Product>> GetAsync()
         {
-            if (!await _cacheRepository.KeyExistsAsync(productKey)) ;
+            if (!await _cacheRepository.KeyExistsAsync(productKey)) 
             return await LoadToCacheFromDbAsync();
 
             var products = new List<Product>();
